@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	/* config options here */
+	async rewrites() {
+		return [
+			{
+				source: "/page/:page(\\d+).html",
+				destination: "/page/:page",
+			},
+		];
+	},
 };
 
 export default nextConfig;

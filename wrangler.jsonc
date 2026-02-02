@@ -24,6 +24,20 @@
 		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
 	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "douyinbot",
+			"database_id": "bf578cb0-392a-453b-90fb-80fdf2e447b3"
+		}
+	],
+	"r2_buckets": [
+		{
+			"bucket_name": "douyinbot",
+			"binding": "douyinbot",
+			"remote": true
+		}
+	],
 	"services": [
 		{
 			// Self-reference service binding, the service name must match the worker name
